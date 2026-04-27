@@ -55,7 +55,8 @@ DATABASE_URL=postgresql://benchmark:benchmark@localhost:5432/benchmark PORT=8000
 When server is ready, it logs:
 
 ```sh
-2026-01-01 12:00:00,000 INFO     Listening on TCP address 127.0.0.1:8000
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 
 ## Run test-server for development:

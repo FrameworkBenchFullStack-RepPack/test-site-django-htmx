@@ -27,11 +27,12 @@ class LifespanGuard:
         if scope["type"] == "lifespan":
             while True:
                 message = await receive()
-                if message["type"] == "startup":
+                if message["type"] == "lifespan.startup":
                     asyncio.get_running_loop().create_task(live_broadcast_async())
-                    await send({"type": "startup.complete"})
-                elif message["type"] == "shutdown":
-                    await send({"type": "shutdown.complete"})
+                    await send({"type": "lifespan.startup.complete"})
+                    return
+                elif message["type"] == "lifespan.shutdown":
+                    await send({"type": "lifespan.shutdown.complete"})
                     return
 
         return await self.app(scope, receive, send)
