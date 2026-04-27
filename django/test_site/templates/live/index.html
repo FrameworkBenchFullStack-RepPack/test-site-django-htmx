@@ -1,0 +1,71 @@
+{% extends "layouts/page.html" %}
+
+{% load static %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static "css/live.css" %}" />
+{% endblock %}
+
+{% block content %}
+<h1>Live data</h1>
+  <p>
+    Aenean pulvinar tortor eget hendrerit pellentesque. Phasellus non nisi
+    aliquet, porta dui a, vehicula nisi. Ut sit amet cursus odio. Integer eget
+    ultricies libero. Pellentesque varius dapibus lacinia. Quisque mi dolor,
+    vehicula id augue id, malesuada sagittis nibh. Nulla lobortis libero
+    accumsan iaculis volutpat. Ut ac tempor dui.
+  </p>
+  <p>
+    Duis luctus vehicula porttitor. Nam eget nisi et sem cursus pharetra.
+    Aliquam nec lectus at diam ornare dapibus pharetra ut nulla. Nam bibendum
+    arcu sit amet ullamcorper sagittis. Nulla nisi nibh, fringilla quis lobortis
+    nec, posuere sed lectus. Duis imperdiet a est et rutrum. Pellentesque vitae
+    varius magna, vitae rutrum arcu. Phasellus imperdiet volutpat quam, a
+    iaculis leo sollicitudin sed. Integer lectus neque, congue sit amet dui id,
+    euismod sodales lectus. Vivamus venenatis lacus et purus porta laoreet. Nunc
+    porttitor porttitor dolor, vel ultricies erat hendrerit in.
+  </p>
+  <p>
+    Proin leo lacus, pretium eget tristique non, molestie id sem. Phasellus quis
+    blandit lectus. Vestibulum ante ipsum primis in faucibus orci luctus et
+    ultrices posuere cubilia curae; Cras ut rutrum tellus. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Donec elementum dapibus euismod. In
+    ligula erat, consectetur at ultrices ut, vulputate sagittis quam. Ut ut
+    metus eu elit porttitor varius. Mauris pellentesque nibh laoreet nunc
+    laoreet, quis porttitor turpis bibendum. Suspendisse posuere ante lacus, in
+    pellentesque quam porttitor at. Maecenas ac ipsum porttitor, vehicula ipsum
+    ut, pretium libero. Praesent tristique tempor nulla ac porta.
+  </p>
+  {% include "partials/live.html" %}
+  <p>
+    Mauris gravida, dui a cursus dapibus, felis est sodales justo, nec tristique
+    nulla dui et quam. Nulla id mattis sapien, in mattis libero. Sed eu
+    consectetur enim, vel ultricies nunc. Phasellus dignissim quam id velit
+    efficitur, ut dignissim orci sollicitudin. Maecenas tellus neque, gravida
+    sed neque ut, porta mattis leo. Sed sit amet tortor sit amet urna pharetra
+    rhoncus aliquet id mi. Nam feugiat eu metus id tristique. Integer auctor
+    elementum euismod. Sed mattis, diam ac dictum semper, sapien augue cursus
+    ante, eget lacinia diam orci in quam.
+  </p>
+  <p>
+    Praesent eget ligula sed quam blandit pharetra at consectetur purus. Vivamus
+    id fermentum enim. Integer euismod varius est, quis commodo eros sagittis
+    quis. Nunc euismod odio nec magna mollis, quis pulvinar metus tincidunt.
+    Suspendisse mollis odio non risus bibendum, in scelerisque ex finibus. Orci
+    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+    mus. Morbi placerat interdum risus, id malesuada ante consequat sed.
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam tincidunt
+    vel tellus at facilisis. Pellentesque eros nunc, volutpat id turpis at,
+    consequat hendrerit lacus. Maecenas eget enim sem. Fusce ac sollicitudin
+    lectus. Quisque suscipit auctor quam, vel hendrerit tellus varius eu. Donec
+    ultrices luctus odio sit amet euismod. Sed vel egestas risus.
+  </p>
+  <p>
+    Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+    ridiculus mus. Nunc tempor libero hendrerit dictum ultricies. Lorem ipsum
+    dolor sit amet, consectetur adipiscing elit. Fusce accumsan euismod nunc,
+    finibus consectetur neque finibus sed. Curabitur ac volutpat nunc, eleifend
+    placerat lectus. Suspendisse potenti. Donec ac aliquet velit.
+  </p>
+{% endblock %}

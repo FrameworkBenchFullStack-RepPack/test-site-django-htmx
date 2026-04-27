@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+
+{% load static %}
+{% load links %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static "css/page.css" %}" />
+{% endblock %}
+
+{% block body %}
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">
+          <img id="icon" src="{% static 'favicon.svg' %}" alt="Front page" />
+        </a>
+      </li>
+      {% render_links %}
+    </ul>
+  </nav>
+</header>
+<main class="page-width">
+  {% block content %}
+  {% endblock %}
+</main>
+{% endblock %}

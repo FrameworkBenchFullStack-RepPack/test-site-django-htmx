@@ -1,0 +1,42 @@
+{% load static %}
+{% load links %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="{% static 'favicon.svg' %}" />
+    <link rel="stylesheet" href="{% static "css/application.css" %}" />
+    <link rel="stylesheet" href="{% static "css/footer.css" %}" />
+    <title>Test site</title>
+    {% block head %}
+    {% endblock %}
+    <script type="importmap">
+      {
+        "imports": {
+          "htmx.org": "{% static "js/vendor/htmx.esm.min@2.0.8.js" %}",
+          "htmx-ext-head-support": "{% static "js/vendor/htmx-ext-head-support.esm.min@2.0.5.js" %}",
+          "htmx-ext-sse": "{% static "js/vendor/htmx-ext-sse.esm.min@2.2.4.js" %}"
+        }
+      }
+    </script>
+    <script type="module" src="{% static "js/app.js" %}"></script>
+  </head>
+  <body hx-boost="true" hx-ext="head-support">
+    {% block body %}
+    {% endblock %}
+    <footer>
+      <div id="footer-content">
+        <a href="/" id="footer-logo">Test site</a>
+        <ul>
+          {% render_links %}
+        </ul>
+        <blockquote>
+          Sed blandit est nec quam vulputate, id vulputate ipsum scelerisque.
+          Etiam in elit ornare, fermentum nisl vel, gravida ipsum.
+        </blockquote>
+      </div>
+    </footer>
+  </body>
+</html>

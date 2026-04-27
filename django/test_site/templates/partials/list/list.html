@@ -1,0 +1,43 @@
+<div id="list">
+    <div class="controls">
+        <form
+            id="list-form"
+            class="form"
+            hx-get="{{ request.path }}"
+            hx-push-url="true"
+            hx-target="#list-data"
+            hx-trigger="submit, change delay:300ms, input changed delay:1s"
+        >
+            <label>
+            Sort by:
+            {{ form.sort }}
+            </label>
+            <fieldset>
+            <legend>Age</legend>
+            <label>
+                From: {{ form.age_from }}
+            </label>
+            <label>
+                To: {{ form.age_to }}
+            </label>
+            </fieldset>
+            <fieldset>
+            <legend>Categories</legend>
+            {{ form.category }}
+            </fieldset>
+            <fieldset>
+            <legend>Paging</legend>
+            <label>
+                Size: {{ form.size }}
+            </label>
+            <label>
+                Page: {{ form.page_num }}
+            </label>
+            </fieldset>
+            <button>Search</button>
+        </form>
+    </div>
+    <div id="list-data">
+        {% include "partials/list/list_content.html" %}
+    </div>
+</div>

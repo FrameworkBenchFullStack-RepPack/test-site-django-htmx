@@ -1,0 +1,180 @@
+{% extends "layouts/base.html" %}
+
+{% load static %}
+{% load links %}
+
+{% block head %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static "css/home.css" %}" />
+<link rel="stylesheet" href="{% static "css/live.css" %}" />
+<link rel="stylesheet" href="{% static "css/list.css" %}" />
+{% endblock %}
+
+{% block body %}
+<main>
+    <header>
+        <h1><a href="/">Test site</a></h1>
+        <ul id="links">
+        {% render_links %}
+        </ul>
+    </header>
+    <div class="page-width">
+        <p>
+        Pellentesque finibus urna at ligula aliquet finibus. Ut rutrum dolor
+        vitae quam molestie, at dapibus enim blandit. Maecenas sit amet blandit
+        nisl. Duis et ligula velit. Aliquam facilisis diam eget consectetur
+        porttitor. Phasellus vitae pretium nisl. Nunc lectus nunc, vestibulum
+        quis gravida et, sollicitudin vel justo. Quisque non viverra mi, vitae
+        semper lacus. Phasellus id nunc eget sem pretium pulvinar. Sed vel
+        consequat quam. Vestibulum posuere augue id magna sollicitudin accumsan.
+        Sed hendrerit molestie mauris, in sodales elit vulputate eget.
+        Vestibulum non consectetur dolor. Fusce et tincidunt turpis.
+        </p>
+        {% include "partials/live.html" %}
+        <p>
+        Curabitur ut purus dui. Sed congue dui sed nulla rutrum, non pharetra
+        enim scelerisque. Proin sed libero lorem. Ut consequat nisi non finibus
+        commodo. Fusce quis leo nunc. Maecenas facilisis placerat eros, non
+        sollicitudin ante efficitur in. Aliquam euismod euismod nulla, quis
+        accumsan augue sollicitudin vehicula. Suspendisse ac metus fringilla,
+        finibus urna sed, pharetra urna. Mauris ornare mauris mollis scelerisque
+        iaculis. Vestibulum vitae mauris sit amet sem porttitor vulputate. Etiam
+        a nunc maximus, feugiat ipsum eu, volutpat nibh. Nam aliquet vehicula
+        tortor id fermentum. Proin tincidunt diam sed vehicula molestie.
+        Phasellus mattis odio ac urna porta mattis at vel magna. Mauris nec leo
+        ante.
+        </p>
+        <p>
+        Suspendisse ultricies neque nulla, eget ullamcorper ligula ornare sit
+        amet. Pellentesque et velit in nunc posuere porttitor sit amet ut elit.
+        Morbi dignissim eu tortor sed tempus. Nullam ultrices leo egestas
+        vehicula aliquam. Phasellus rhoncus erat nisl, eget mollis purus
+        pulvinar sed. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Ut vel tincidunt orci.
+        </p>
+        <p>
+        Nulla ac eros sed orci interdum rutrum. Integer facilisis, nisi blandit
+        rhoncus rhoncus, leo nisl molestie nibh, at fringilla magna enim sit
+        amet lectus. Nullam elementum sit amet ipsum eu malesuada. Aliquam
+        bibendum iaculis pulvinar. Praesent nunc magna, vestibulum vel massa
+        nec, faucibus aliquet tellus. Quisque vulputate vestibulum tristique.
+        Donec quis pretium turpis, id aliquet erat. Quisque tincidunt nisi
+        scelerisque mauris rutrum, ac tempor augue luctus. Vivamus vulputate,
+        lorem in euismod consequat, orci elit mattis mi, in feugiat magna massa
+        vel magna.
+        </p>
+        {% include "partials/list/list.html" %}
+        <p>
+        Quisque dignissim, purus sed cursus ultricies, diam ex blandit quam,
+        quis viverra quam risus in urna. Proin pretium vitae libero a efficitur.
+        Cras eu libero imperdiet, mollis sem sit amet, ornare ligula. Etiam
+        fringilla ipsum in neque egestas lacinia. Cras rutrum, massa nec
+        ullamcorper blandit, eros est congue erat, id aliquet lorem velit quis
+        sem. Aliquam eget laoreet nunc. Pellentesque mattis ante tincidunt
+        rhoncus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Mauris elementum volutpat justo, vitae euismod orci euismod at.
+        Donec eget neque arcu. Integer gravida viverra bibendum. Mauris vehicula
+        id risus sit amet pellentesque. Vivamus vitae rhoncus magna, nec
+        pharetra ligula. Donec sed pretium sapien. Interdum et malesuada fames
+        ac ante ipsum primis in faucibus. Nunc pharetra dapibus nibh eget
+        efficitur.
+        </p>
+        <p>
+        Praesent sit amet fermentum turpis. Pellentesque ullamcorper lacinia
+        lorem, in varius ipsum porttitor eget. Praesent vel convallis justo.
+        Fusce porta magna eu posuere blandit. Phasellus bibendum, velit eget
+        suscipit finibus, nisi neque facilisis justo, eget consectetur nisl
+        justo sit amet ipsum. Phasellus magna turpis, pharetra sit amet massa
+        ac, porttitor convallis neque. Integer est lacus, ornare et ultricies
+        eu, lobortis vitae tellus. Ut nec dapibus nunc. Aliquam faucibus lacinia
+        sodales. Morbi mauris ligula, eleifend nec metus ut, sollicitudin
+        efficitur metus. Curabitur ullamcorper accumsan mi at condimentum.
+        Maecenas commodo augue sit amet augue pharetra, eu interdum velit
+        tincidunt. Curabitur scelerisque tellus felis, non vestibulum leo
+        malesuada in. Vestibulum ut elit a diam rutrum commodo.
+        </p>
+        <p>
+        Nullam sit amet urna tortor. Sed auctor orci eget porttitor tristique.
+        Maecenas scelerisque ornare efficitur. Mauris consequat metus ac dui
+        cursus vulputate. Praesent tincidunt porttitor augue non lacinia. Nulla
+        dui ligula, ornare quis dapibus eget, gravida ac leo. Pellentesque diam
+        dolor, mattis vel nibh sit amet, ultrices suscipit lectus. Morbi
+        convallis, neque quis molestie blandit, leo velit ornare massa, et
+        maximus nisl est eu metus. Duis et ante blandit nulla fermentum accumsan
+        et convallis eros. Maecenas sit amet vestibulum elit. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos.
+        </p>
+        <p>
+        Sed porttitor sagittis lacinia. Fusce vel dolor at nunc porta malesuada
+        non eget felis. Sed vehicula odio sed elit tempus, ut pellentesque
+        tortor consequat. Phasellus aliquam mattis eros quis cursus. Etiam
+        auctor condimentum bibendum. Phasellus quis sem malesuada, placerat
+        nulla in, suscipit elit. Ut tortor nunc, vestibulum non justo vel,
+        malesuada rhoncus felis. Donec eget urna sodales, mollis tortor ut,
+        fermentum massa. Etiam pulvinar tortor massa, vitae varius ipsum semper
+        quis.
+        </p>
+        <p>
+        Curabitur hendrerit auctor eros, eu lacinia quam ornare eu. Mauris
+        vulputate hendrerit faucibus. Duis eros est, dictum rutrum tortor sit
+        amet, congue fringilla eros. Sed at enim vitae elit sagittis eleifend.
+        Nullam mattis, eros a hendrerit pretium, neque ex elementum leo, non
+        feugiat elit urna eget eros. Pellentesque faucibus ac nulla et
+        imperdiet. Ut interdum sit amet purus ut commodo. Vivamus sagittis
+        sollicitudin lorem, a vulputate metus consectetur id. Mauris dictum
+        magna sed pulvinar egestas.
+        </p>
+        <p>
+        Praesent suscipit libero sit amet suscipit condimentum. Cras
+        sollicitudin fringilla viverra. Suspendisse potenti. Donec a mi in neque
+        porta viverra. Donec ex leo, porta nec laoreet sit amet, posuere at
+        velit. Pellentesque mattis magna at est rutrum, sit amet tincidunt erat
+        fermentum. Etiam pulvinar sollicitudin odio varius luctus. Donec quam
+        urna, dapibus et porta vel, dictum quis justo.
+        </p>
+        <p>
+        Morbi urna erat, dictum sit amet pharetra in, imperdiet vel elit.
+        Quisque mauris mauris, sodales quis sagittis vel, placerat nec orci.
+        Mauris at nisi sit amet sem laoreet blandit id et dui. Cras nec velit
+        eget diam elementum pharetra non vel felis. Quisque molestie vulputate
+        tellus at faucibus. Proin in suscipit justo. Curabitur aliquet, eros
+        quis facilisis suscipit, nisi ex placerat justo, a faucibus lacus nulla
+        at felis. Phasellus vestibulum urna lorem, mollis vestibulum enim
+        consequat ac. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Phasellus vitae dolor in dolor varius
+        molestie. Sed sed pulvinar felis. Sed eu laoreet justo. Ut egestas metus
+        lectus, sit amet luctus lacus varius ac. Vivamus sit amet nibh quis
+        metus molestie gravida.
+        </p>
+        <p>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam nec
+        est elementum nisl consectetur bibendum. Nam eu est et lectus rutrum
+        semper. Duis vel elit magna. Sed congue interdum sem et laoreet.
+        Praesent consequat justo justo, at ornare turpis rutrum vel. Vestibulum
+        at magna congue, malesuada nibh vel, commodo elit. Suspendisse purus
+        tortor, blandit et iaculis sit amet, elementum quis nunc. Nullam vitae
+        ornare ipsum, eu lobortis dui. Nullam condimentum massa quis aliquet
+        vehicula.
+        </p>
+        <p>
+        Integer eu enim sit amet nibh eleifend tristique. Nulla facilisi.
+        Phasellus tortor turpis, tincidunt vel vulputate vitae, molestie eu ex.
+        Nulla et ligula vitae augue efficitur imperdiet at quis sapien.
+        Vestibulum sed interdum dui. Cras a laoreet tellus. Vestibulum pulvinar
+        facilisis purus, non cursus massa fermentum ut. Ut imperdiet lectus eu
+        nibh placerat, id tempus felis varius. Aliquam porttitor odio at nisl
+        pulvinar, eu iaculis ex semper. Sed quis efficitur mauris, id feugiat
+        nisl. Vivamus dignissim dictum auctor.
+        </p>
+        <p>
+        Sed lobortis ultrices malesuada. Maecenas congue egestas neque quis
+        tincidunt. Fusce tempor feugiat nisi vitae gravida. Sed blandit arcu
+        diam, nec interdum diam sodales quis. Cras ultrices nunc in arcu
+        venenatis convallis. Nullam lectus eros, maximus vel mauris dignissim,
+        sagittis gravida ligula. Quisque facilisis lorem leo, at mattis metus
+        vulputate quis.
+        </p>
+    </div>
+</main>
+{% endblock %}

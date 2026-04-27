@@ -1,0 +1,59 @@
+#list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+
+  .form {
+    border: 0.1em solid black;
+    border-radius: 0.7em;
+    padding: 1em;
+    accent-color: var(--color-tertiary);
+
+    & label:has(> input[name="category"]) {
+      display: block;
+    }
+
+    & input {
+      max-width: 6em;
+    }
+
+    & input[type="submit"] {
+      margin-top: 0.5em;
+    }
+  }
+
+  .table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+    & th {
+      font-weight: bolder;
+      background-color: var(--color-secondary);
+    }
+
+    & td,
+    & th {
+      border: 0.08em solid black;
+      height: 3.5em;
+    }
+  }
+
+  .no-data-message {
+    text-align: center;
+  }
+
+  &.sticky {
+    .form {
+      position: sticky;
+      top: calc(var(--header-height) + var(--page-padding));
+    }
+
+    .table {
+      th {
+        top: var(--header-height);
+        position: sticky;
+      }
+    }
+  }
+}

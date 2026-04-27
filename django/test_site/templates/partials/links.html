@@ -1,0 +1,3 @@
+{% for name, url_name in NAV_LINKS %}
+<li><a href="{% url url_name %}">{{ name }}</a></li>
+{% endfor %}

@@ -1,0 +1,22 @@
+main header {
+  padding-top: var(--header-height);
+  padding-bottom: 5em;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+  }
+  h1 > a {
+    text-decoration: none;
+  }
+  #links {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.3em;
+  }
+}
