@@ -46,6 +46,11 @@ Open the project folder:
 cd django
 ```
 
+Collect static files:
+```sh
+python3 manage.py collectstatic
+```
+
 Run server:
 
 ```sh
