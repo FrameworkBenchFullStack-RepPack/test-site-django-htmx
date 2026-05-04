@@ -54,7 +54,7 @@ python3 manage.py collectstatic
 Run server:
 
 ```sh
-DATABASE_URL=postgresql://benchmark:benchmark@localhost:5432/benchmark PORT=8000 daphne test_site.asgi:application
+DATABASE_URL=postgresql://benchmark:benchmark@localhost:5432/benchmark daphne test_site.asgi:application --port 8000
 ```
 
 When server is ready, it logs:
