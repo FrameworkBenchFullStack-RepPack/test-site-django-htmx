@@ -22,9 +22,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name="home"),
-    path("static-1", views.static_1, name="static-1"),
-    path("static-2", views.static_2, name="static-2"),
-    path("live", views.live, name="live"),
-    path("list", views.list_view, name="list"),
-    path("api/live", views.live_stream),
+    path("static-1/", views.static_1, name="static-1"),
+    path("static-2/", views.static_2, name="static-2"),
+    path("live/", views.live, name="live"),
+    path("list/", views.list_view, name="list"),
+    path("api/live/", views.live_stream),
 ]
